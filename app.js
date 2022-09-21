@@ -9,12 +9,16 @@
 // alert(welcomemessage)
 var btntranslate=document.querySelector('#btn-translate')
 var txtinput=document.querySelector('#txt-input');
-console.log(txtinput)
-// console.log(btntranslate)
+var outputdiv=document.querySelector('#output');
+// outputdiv.innerText="Saurabh Shinde"
+
+console.log(outputdiv)
+
 
 function clickhandler(){
     console.log('Clicked!')
     console.log("Input:- "+txtinput.value)
+    outputdiv.innerText='ajsjsjsjsjsj   '+txtinput.value
 }
 
 btntranslate.addEventListener('click',clickhandler)
